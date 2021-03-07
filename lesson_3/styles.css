@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  outline: none;
+}
+
+body {
+  background-color: #191b1d;
+  color: #fff;
+  text-align: center;
+}
+
+.header-block {
+  background-color: #bc1e4a;
+  margin: auto;
+  width: 418px;
+  height: 108px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 25px 94px;
+}
+
+.header-text-small {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header-text-big {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 139px;
+  font-weight: 700;
+}
+
+.title-second {
+  height: 32px;
+  margin-top: 30px;
+}
+
+.text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title-img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.card {
+  display: inline-block;
+  width: 375px;
+  height: 608px;
+  background-color: #22262c;
+  vertical-align: top;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 195px;
+  position: relative;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card-title {
+  font-size: 25px;
+  margin-top: 37px;
+  font-weight: 600;
+}
+
+.card-price {
+  font-size: 56px;
+  font-weight: 700;
+  margin-top: 18px;
+}
+
+.card-price span {
+  font-size: 14px;
+}
+
+.card:last-child .card-price {
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+.card-description {
+  margin-top: 66px;
+  text-align: left;
+  margin-left: 47px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-description li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.card-description li::before {
+  color: #bc1e4a;
+  content: "•";
+  padding-right: 10px;
+}
+
+.card-btn {
+  display: inline-block;
+  margin-bottom: 35px;
+  border: 1px solid #bc1e4a;
+  padding: 15px 56px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 243px;
+  left: 66px;
+  bottom: 15px;
+  position: absolute;
+}
+
+.card:nth-child(2) .card-btn {
+  background-color: #bc1e4a;
+}
