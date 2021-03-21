@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  outline: none;
+}
+
+body {
+  background-image: url(./img/background.png);
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  height: 40px;
+  margin-right: 7px;
+}
+
+.menu-input,
+.menu-list {
+  display: none;
+}
+
+.menu-button {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.menu-button:hover,
+.menu-input:checked ~ .menu-button {
+  opacity: 1;
+}
+
+.menu-icon {
+  height: 40px;
+}
+
+.menu-list {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+}
+
+.menu-point {
+  background: #fff;
+  opacity: 0.7;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  width: 200px;
+}
+
+.menu-point-link {
+  text-decoration: none;
+  display: block;
+  color: #6b86a8;
+}
+
+.menu-point:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu-input:checked ~ .menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 166px;
+  color: #fff;
+  font-size: 37px;
+}
+
+.text-blocks {
+  position: relative;
+  margin: auto;
+  margin-top: 67px;
+  width: 494px;
+}
+
+.text {
+  background-color: #fff;
+  margin-bottom: 35px;
+  color: #6b86a8;
+  padding: 22px 30px;
+  border-radius: 3px;
+  text-align: left;
+}
+
+.email-form {
+  position: absolute;
+  display: flex;
+  left: 0px;
+}
+
+.email {
+  width: 320px;
+  padding: 16px 30px;
+  border-radius: 3px;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 7px;
+  border: none;
+}
+
+.email::placeholder {
+  font-size: 16px;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  color: #cfcfcf;
+}
+
+.button {
+  width: 167px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #ff5b1c;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Baloo Da 2", cursive;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+.button:hover {
+  background: #ec7242;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 189px;
+  margin-bottom: 100px;
+}
+
+.icon-link {
+  height: 16px;
+  margin-right: 27px;
+}
+
+.icon-link:last-child {
+  margin-right: 0px;
+}
