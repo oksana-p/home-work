@@ -1,0 +1,27 @@
+.first {
+  display: flex;
+}
+
+.second {
+  display: flex;
+}
+
+.third {
+  display: flex;
+}
+
+.third .colored {
+  width: 25%;
+}
+
+.fourth {
+  display: flex;
+}
+
+.fourth .colored:last-of-type {
+  width: 50%;
+}
+
+.fifth {
+  display: flex;
+}

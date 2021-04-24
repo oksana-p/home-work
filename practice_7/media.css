@@ -1,0 +1,93 @@
+@media screen and (max-width: 1799px) {
+  .first {
+    flex-wrap: wrap;
+  }
+  .first .colored {
+    width: 50%;
+  }
+
+  .third {
+    flex-wrap: wrap;
+  }
+
+  .third .colored {
+    width: 50%;
+  }
+
+  .third .colored:last-of-type {
+    width: 100%;
+  }
+
+  .fourth .colored {
+    width: 35%;
+  }
+
+  .fourth .colored:nth-of-type(2) {
+    width: 30%;
+  }
+
+  .fourth .colored:last-of-type {
+    width: 35%;
+  }
+
+  .fifth {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fifth .colored {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .third {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .third .colored {
+    width: 100%;
+  }
+
+  .fifth .colored {
+    width: 50%;
+  }
+
+  .fifth .colored:last-of-type {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .third {
+    flex-wrap: wrap;
+  }
+  .third .colored {
+    width: 100%;
+  }
+
+  .fourth {
+    flex-wrap: wrap;
+  }
+
+  .fourth .colored,
+  .fourth .colored:nth-of-type(2) {
+    width: 50%;
+  }
+
+  .fourth .colored:last-of-type {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fourth .colored,
+  .fourth .colored:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .fifth .colored {
+    width: 100%;
+  }
+}
