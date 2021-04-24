@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.fourth .colored {
+  width: 25%;
+}
+
 .fourth .colored:last-of-type {
   width: 50%;
 }
