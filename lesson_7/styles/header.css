@@ -1,0 +1,39 @@
+.header {
+  background-color: var(--header-color);
+  height: var(--header-height);
+}
+
+.header-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  margin-right: 23px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: var(--main-font-family);
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

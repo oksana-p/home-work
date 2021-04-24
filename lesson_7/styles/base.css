@@ -33,3 +33,14 @@ button,
 select {
   outline: none;
 }
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1220px;
+}
