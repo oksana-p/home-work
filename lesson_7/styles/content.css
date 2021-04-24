@@ -1,50 +1,12 @@
-:root {
-  --main-font-family: "Roboto", sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  font-family: var(--main-font-family);
-  color: #222222;
-}
-
-body,
-ul,
-ol,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0px;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-}
-
-input,
-button,
-select {
-  outline: none;
-}
-
 .header {
-  background-color: #222222;
-  height: 60px;
+  background-color: var(--header-color);
+  height: var(--header-height);
 }
 
 .page-content {
   display: flex;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .content-wrapper {
@@ -55,6 +17,10 @@ select {
 .header-block {
   display: flex;
   justify-content: flex-end;
+}
+
+.nav__toggle {
+  display: none;
 }
 
 .navbar {
@@ -84,7 +50,7 @@ select {
 }
 
 .main-section {
-  background: url(./img/Rectangle.png);
+  background: url(../img/Rectangle.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 1168px;
@@ -121,10 +87,12 @@ select {
   font-weight: 400;
   margin-bottom: 27px;
   color: #222222;
+  line-height: 36px;
 }
 
 .line-name {
   font-size: 12px;
+  line-height: 16px;
   margin-bottom: 12px;
   color: #484848;
   letter-spacing: 1px;
@@ -150,7 +118,7 @@ select {
 
 select {
   appearance: none;
-  background: url(./img/dropdown.png) no-repeat right;
+  background: url(../img/dropdown.png) no-repeat right;
   background-position-x: 156px;
 }
 
@@ -181,6 +149,7 @@ select {
 
 .sec-title {
   font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -189,11 +158,15 @@ select {
   margin-top: 65px;
 }
 
+.mob-view {
+  display: none;
+}
+
 .sec-1__img-block {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url(./img/Rectangle2.png);
+  background: url(../img/Rectangle2.png);
   height: 300px;
   margin-top: 24px;
 }
@@ -266,6 +239,7 @@ select {
 
 .sec2__block-title1 {
   font-size: 20px;
+  line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 17px;
@@ -274,6 +248,7 @@ select {
 
 .sec2__block-title2 {
   font-size: 26px;
+  line-height: 16px;
 }
 
 .sec-2__block-description {
@@ -289,6 +264,7 @@ select {
   border: none;
   color: #fff;
   font-size: 16px;
+  line-height: 20px;
   font-family: var(--main-font-family);
 }
 
@@ -311,6 +287,7 @@ select {
 
 .sec-3__title-text {
   font-size: 22px;
+  line-height: 26px;
   font-weight: 400;
 }
 
@@ -330,7 +307,7 @@ select {
 .sec-3__block-status {
   display: flex;
   justify-content: space-between;
-  margin-top: 14px;
+  margin-top: 7px;
   margin-bottom: 7px;
 }
 
@@ -355,6 +332,7 @@ select {
 
 .sec-3__host-status > h5 {
   font-size: 12px;
+  line-height: 16px;
   font-weight: 400;
 }
 
@@ -362,6 +340,7 @@ select {
   display: flex;
   align-items: center;
   font-size: 14px;
+  line-height: 20px;
   color: #717171;
   font-weight: 400;
   min-height: 25px;
@@ -377,6 +356,7 @@ select {
 .sec-3__rate {
   align-self: center;
   font-size: 13px;
+  line-height: 18px;
   font-weight: 400;
 }
 
@@ -384,6 +364,7 @@ select {
   text-decoration: none;
   font-family: var(--main-font-family);
   font-size: 16px;
+  line-height: 20px;
   color: #222222;
 }
 

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lesson 7</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <div class="header page-content">
-        <div class="content-wrapper header-block">
+    <header class="header page-content">
+        <nav class="content-wrapper header-block nav" id="nav">
+            <button class="nav__toggle" id="toggle"></button>
             <ul class="navbar">
                 <li class="nav-item">
                     <a href="" class="nav-link">Shop</a>
@@ -26,9 +27,9 @@
                     <a href="" class="nav-link">Contact us</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="main-section page-content">
+        </nav>
+    </header>
+    <main class="main-section page-content">
         <div class="content-wrapper">
             <form action="" class="main-section-form">
                 <h2 class="form-title">
@@ -75,11 +76,11 @@
                 </div>
             </form>
         </div>
-    </div>
-    <div class="section-1 page-content">
+    </main>
+    <section class="section-1 page-content">
         <div class="content-wrapper">
             <h3 class="sec-1__title sec-title">
-                Жилье Airbnb Plus
+                Жилье <br class="mob-view"> Airbnb Plus
             </h3>
             <p class="sec-1__description">
                 Подборка жилья, проверенного на качество и дизайн.
@@ -92,11 +93,11 @@
                 </a>
             </div>   
         </div>
-    </div>
-    <div class="section-2 page-content">
+    </section>
+    <section class="section-2 page-content">
         <div class="content-wrapper">
             <h3 class="sec-2__title sec-title">
-                Представляем Приключения Airbnb
+                Представляем <br class="mob-view"> Приключения Airbnb
             </h3>
             <p class="sec-2__description">
                 Многодневные поездки под руководством местных экспертов. <br>
@@ -203,8 +204,8 @@
                 </div>
             </div>    
         </div>
-    </div>
-    <div class="section-3 page-content">
+    </section>
+    <section class="section-3 page-content">
         <div class="content-wrapper">
             <a href="" class="sec-3__title">
                 <h3 class="sec-3__title-text">
@@ -269,8 +270,8 @@
             </div>            
 
         </div>
-    </div>
-    <div class="footer page-content">
+    </section>
+    <footer class="footer page-content">
         <div class="content-wrapper footer-block">
             <div class="footer-first">
                 <div class="footer-first__block">
@@ -379,6 +380,11 @@
                 </div>
             </div>      
         </div>
-    </div>    
+    </footer>
+    <script>
+        toggle.onclick = () => {
+            nav.classList.toggle('expand')
+        }
+    </script> 
 </body>
 </html>
