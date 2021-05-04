@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="header">
-        <input type="checkbox" class="menu-input" id="menu">
-        <label for="menu" class="menu-button">
-            <img src="./img/menu-icon.png" alt="" class="menu-icon">
-        </label>
-        <ul class="menu-list">
-            <li class="menu-point">
-                <a href="" class="menu-point-link">Привіт</a>
-            </li>
-            <li class="menu-point">
-                <a href="" class="menu-point-link">Hello</a>
-            </li>
-            <li class="menu-point">
-                <a href="" class="menu-point-link">Guten Tag</a>
-            </li>
-            <li class="menu-point">
-                <a href="" class="menu-point-link">你好</a>
-            </li>
-        </ul>
-    </div>
+    <header class="header">
+        <nav class="navbar" id="nav">
+            <button class="nav__toggle" id="toggle">
+                <div class="toggle__additional-line"></div>
+            </button>
+            <ul class="menu-list">
+                <li class="menu-point">
+                        <a href="" class="menu-point-link">Привіт</a>
+                </li>
+                <li class="menu-point">
+                    <a href="" class="menu-point-link">Hello</a>
+                </li>
+                <li class="menu-point">
+                    <a href="" class="menu-point-link">Guten Tag</a>
+                </li>
+                <li class="menu-point">
+                    <a href="" class="menu-point-link">你好</a>
+                </li>
+            </ul>
+        </nav>        
+    </header>
     <h3>Indiepages</h3>
-    <div class="text-blocks">
+    <section class="text-blocks">
         <div class="text">Hey! We’re not quite ready for you just yet 😕</div>
         <div class="text">We’re releasing our new website soon! Why not stay up to date with all the awesome features we’re releasing, trust me, it’s exciting 😆</div>
         <div class="text">Did we forget to mention, we’re giving away a brand new Macbook air to one of our lucky subscribers 💻 👇🏼</div>
@@ -37,8 +38,8 @@
             <input type="email" class="email" placeholder="Email address">
             <button class="button">Get updates</button>
         </form>        
-    </div>
-    <div class="social-links">
+    </section>
+    <section class="social-links">
         <a href="https://www.facebook.com/" class="icon-link" target="_blank">
             <img src="./img/fb-icon.png" alt="facebook-link">
         </a>
@@ -48,6 +49,11 @@
         <a href="https://www.instagram.com/" class="icon-link" target="_blank">
             <img src="./img/ig-icon.png" alt="instagram-link">
         </a>
-    </div>   
+    </section>   
+    <script>
+        toggle.onclick = () => {
+            nav.classList.toggle('expand')
+        }
+    </script> 
 </body>
 </html>

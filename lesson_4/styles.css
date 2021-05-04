@@ -39,37 +39,92 @@ body {
   text-align: center;
 }
 
-.header {
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.nav__toggle {
+  display: inherit;
+  --size: 35px;
+  width: var(--size);
+  height: var(--size);
   position: relative;
-  height: 40px;
-  margin-right: 7px;
+  background: none;
+  border: none;
 }
 
-.menu-input,
-.menu-list {
-  display: none;
-}
-
-.menu-button {
+.nav__toggle::before {
+  content: "";
   position: absolute;
-  right: 0px;
-  cursor: pointer;
-  opacity: 0.7;
+  width: 100%;
+  height: 4px;
+  border-radius: 20%;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: all 0.3s;
 }
 
-.menu-button:hover,
-.menu-input:checked ~ .menu-button {
+.nav__toggle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 20%;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.toggle__additional-line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 20%;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background-color: #fff;
+}
+
+.nav__toggle:hover {
+  opacity: 80%;
+}
+
+.menu-list {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.navbar.expand .menu-list {
   opacity: 1;
+  visibility: visible;
 }
 
-.menu-icon {
-  height: 40px;
+.navbar.expand .nav__toggle::before {
+  transform: translateX(-50%) rotate(-45deg);
+  top: 50%;
 }
 
-.menu-list {
-  position: absolute;
-  right: 0px;
-  top: 40px;
+.navbar.expand .nav__toggle::after {
+  transform: translateX(-50%) rotate(45deg);
+  top: 50%;
+  bottom: calc(50% - 1px);
+}
+
+.navbar.expand .toggle__additional-line::before {
+  display: none;
 }
 
 .menu-point {
@@ -93,11 +148,6 @@ body {
 .menu-point:hover {
   opacity: 1;
   cursor: pointer;
-}
-
-.menu-input:checked ~ .menu-list {
-  display: flex;
-  flex-direction: column;
 }
 
 h3 {
