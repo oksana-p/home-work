@@ -1,0 +1,43 @@
+.trafficlight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.lights {
+  display: flex;
+  width: 150px;
+  background-color: rgb(105, 104, 104);
+  list-style: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+  border-radius: 15%;
+}
+
+.light {
+  margin: 10px 10px;
+}
+
+.select_light {
+  $size: 100px;
+  background-color: black;
+  border: none;
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+}
+
+.light_red {
+  background-color: red;
+}
+
+.light_yellow {
+  background-color: yellow;
+}
+
+.light_green {
+  background-color: green;
+}

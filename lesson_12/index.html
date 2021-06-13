@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="trafficlight">
+        <ul class="lights">
+            <li class="light"><button class="select_light select_light_1"></button></li>
+            <li class="light"><button class="select_light select_light_2"></button></li>
+            <li class="light"><button class="select_light select_light_3"></button></li>
+        </ul>
+    </div>
+
+    <script>
+        (function() {
+            const lightRed = document.querySelector('.select_light_1');
+            const lightYellow = document.querySelector('.select_light_2');
+            const lightGreen = document.querySelector('.select_light_3');
+
+            lightRed.addEventListener('click', function() {
+                lightRed.classList.add('light_red');
+                lightYellow.classList.remove('light_yellow');
+                lightGreen.classList.remove('light_green');
+            });
+
+            lightYellow.addEventListener('click', function() {
+                lightYellow.classList.add('light_yellow');
+                lightRed.classList.remove('light_red');
+                lightGreen.classList.remove('light_green');
+
+            });
+
+            lightGreen.addEventListener('click', function() {
+                lightGreen.classList.add('light_green');
+                lightRed.classList.remove('light_red');
+                lightYellow.classList.remove('light_yellow');
+            });
+
+        })();
+    </script>
+</body>
+</html>
