@@ -1,0 +1,45 @@
+.main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__circle_popup {
+    display: none;
+    width: 200px;
+    text-align: center;
+    background: linear-gradient(to top, rgb(250, 169, 243), pink);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 107px;
+      top: -28px;
+      border: 14px solid transparent;
+      border-bottom: 14px solid pink;
+    }
+    &.active {
+      display: inline;
+    }
+  }
+}
+
+.circle {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(250, 169, 243);
+  border: none;
+}
