@@ -1,0 +1,50 @@
+.select {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  margin: 2px;
+}
+.select__title {
+  width: 100%;
+  border: none;
+  background-color: #70e5fa;
+  color: #040355;
+  font-size: 1rem;
+  text-align: left;
+  height: 30px;
+  line-break: 30px;
+}
+.select__title:hover {
+  cursor: pointer;
+}
+.select__options {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  transition: all 0.3s;
+}
+.select__option {
+  width: 100%;
+  border: none;
+  background-color: #97eefd;
+  font-size: 1rem;
+  text-align: left;
+  height: 30px;
+  line-break: 30px;
+  border-bottom: 1px solid #70e5fa;
+}
+.select__option:hover {
+  cursor: pointer;
+  background-color: #a9effc;
+}
+.select_active .select__options {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=select.css.map */

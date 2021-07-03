@@ -1,0 +1,50 @@
+.select {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  margin: 2px;
+  &__title {
+    width: 100%;
+    border: none;
+    background-color: rgb(112, 229, 250);
+    color: rgb(4, 3, 85);
+    font-size: 1rem;
+    text-align: left;
+    height: 30px;
+    line-break: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__options {
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    transition: all 0.3s;
+  }
+  &__option {
+    width: 100%;
+    border: none;
+    background-color: rgb(151, 238, 253);
+    font-size: 1rem;
+    text-align: left;
+    height: 30px;
+    line-break: 30px;
+    border-bottom: 1px solid rgb(112, 229, 250);
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(169, 239, 252);
+    }
+  }
+  &_active {
+    .select__options {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
