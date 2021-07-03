@@ -2,8 +2,6 @@ function createSelect(wrapper, options) {
     let root;
     let title;
     let dropdown;
-    const items = [];
-    const buttons = [];
 
     function createRoot() {
         root = document.createElement('div');
