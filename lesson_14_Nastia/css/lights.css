@@ -1,0 +1,13 @@
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=lights.css.map */
