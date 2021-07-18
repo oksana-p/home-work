@@ -1,0 +1,14 @@
+{
+  "movies": [
+    { "title": "Fantastic beasts and where to find them", "description": "Fantastic Beasts and Where to Find Them is a 2016 fantasy film directed by David Yates. A joint British and American production, it is a spin-off of and prequel to the Harry Potter film series. It was produced and written by J. K. Rowling in her screenwriting debut, inspired by her 2001 guide book of the same name. The film features an ensemble cast that includes Eddie Redmayne, Katherine Waterston, Dan Fogler, Alison Sudol, Ezra Miller, Samantha Morton, Jon Voight, Carmen Ejogo, Ron Perlman, and Colin Farrell. It is the first instalment in the Fantastic Beasts film series, and ninth overall in the Wizarding World franchise that began with the Harry Potter films.", "rating": "4.7", "preview": { "high": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199507/movies/bitmap_2x_qt5gqd.jpg", "low": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199506/movies/bitmap_wixqtd.jpg" }, "genre": "fantasy" },
+    { "title": "Justice Leaque", "description": "Justice League is a 2017 American superhero film based on the DC Comics superhero team of the same name. Produced by RatPac-Dune Entertainment,[N 2] DC Films, Atlas Entertainment, and Cruel and Unusual Films and distributed by Warner Bros. Pictures, it is the fifth installment in the DC Extended Universe (DCEU) and the follow-up to Batman v Superman: Dawn of Justice.[7][8][9] Directed by Zack Snyder and written by Chris Terrio and Joss Whedon, the film features an ensemble cast including Ben Affleck, Henry Cavill, Amy Adams, Gal Gadot, Ezra Miller, Jason Momoa, Ray Fisher, Jeremy Irons, Diane Lane, Connie Nielsen, J. K. Simmons, and Ciarán Hinds. In the film, Batman and Wonder Woman recruit The Flash, Aquaman, and Cyborg after Superman's death to save the world from the catastrophic threat of Steppenwolf and his army of Parademons.", "rating": "3.9", "preview": { "high": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199102/movies/bitmap_qm5atv.jpg", "low": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199121/movies/bitmap_2x_rczowy.jpg" }, "genre": "comics" },
+    { "title": "Beauty and the beast", "description": "", "rating": "3.9", "preview": { "high": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574198944/movies/bitmap_ocrjt9.jpg", "low": "" }, "genre": "fairytail" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
