@@ -6,7 +6,7 @@
       "rating": "4.7", 
       "preview": {
           "high": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199507/movies/bitmap_2x_qt5gqd.jpg",
-          "low" "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199506/movies/bitmap_wixqtd.jpg",
+          "low" "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199506/movies/bitmap_wixqtd.jpg"
       },
       "genre": "fantasy"    
     },
@@ -16,7 +16,7 @@
       "rating": "3.9", 
       "preview": {
           "high": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199102/movies/bitmap_qm5atv.jpg",
-          "low" "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199121/movies/bitmap_2x_rczowy.jpg",
+          "low" "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574199121/movies/bitmap_2x_rczowy.jpg"
       },
       "genre": "comics"    
     },
@@ -26,7 +26,7 @@
       "rating": "3.9", 
       "preview": {
           "high": "https://res.cloudinary.com/dx4wkpab8/image/upload/v1574198944/movies/bitmap_ocrjt9.jpg",
-          "low" "",
+          "low" ""
       },
       "genre": "fairytail"    
     }
